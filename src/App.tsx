@@ -23,25 +23,36 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const nomes = ["Carlos", "Fernanda", "Rodrigo", "Amanda", "José", "Patrícia", "Marcos", "Letícia", "Bruno", "Vanessa", "Fábio", "Juliana", "Rafael", "Camila", "André", "Larissa", "Henrique", "Tânia", "Luciano", "Natália"];
-
-    const cidades = [
-      "São Paulo - SP", "Rio de Janeiro - RJ", "Belo Horizonte - MG", "Curitiba - PR", "Porto Alegre - RS",
-      "Salvador - BA", "Brasília - DF", "Goiânia - GO", "Campinas - SP", "Fortaleza - CE",
-      "Recife - PE", "Manaus - AM", "Belém - PA", "São Luís - MA", "Joinville - SC",
-      "Florianópolis - SC", "Vitória - ES", "Campo Grande - MS", "Cuiabá - MT", "Uberlândia - MG",
-      "Sorocaba - SP", "Ribeirão Preto - SP", "Aracaju - SE", "Natal - RN", "Maceió - AL",
-      "Teresina - PI", "Londrina - PR", "Juiz de Fora - MG", "Niterói - RJ", "Anápolis - GO"
+    const clientes = [
+      { nome: "Gerson Jose", cidade: "Maracás - BA" },
+      { nome: "Deivid Crisciullo", cidade: "Rio de Janeiro - RJ" },
+      { nome: "Rafael Adame", cidade: "Paraty - RJ" },
+      { nome: "Leandro Faustino", cidade: "Alagoinhas - BA" },
+      { nome: "Raphael Luís", cidade: "São Bernardo do Campo - SP" },
+      { nome: "Kelson Xavier", cidade: "Jacareí - SP" },
+      { nome: "Cristiano Paulino", cidade: "Juquiá - SP" },
+      { nome: "Evandro Poffo", cidade: "Joinville - SC" },
+      { nome: "Victor Pastore", cidade: "Guarapari - ES" },
+      { nome: "Maxwell Pinheiro", cidade: "São José de Ribamar - MA" },
+      { nome: "Allan César", cidade: "Mongaguá - SP" },
+      { nome: "Silvio Barbosa", cidade: "Patrocínio - MG" },
+      { nome: "Anderson Duarte", cidade: "São Gonçalo - RJ" },
+      { nome: "Railson Fernandes", cidade: "Barcarena - PA" },
+      { nome: "Ewerton Douglas", cidade: "Ponta Grossa - PR" },
+      { nome: "Everton Da", cidade: "Gravataí - RS" },
+      { nome: "Edilton Leonardy", cidade: "Salvador - BA" },
+      { nome: "Virgilio Carvalho", cidade: "Lauro de Freitas - BA" },
+      { nome: "Célio Pereira", cidade: "Várzea Paulista - SP" },
+      { nome: "Felipe Goncalves", cidade: "Telêmaco Borba - PR" }
     ];
 
     const showNotification = () => {
-      const nome = nomes[Math.floor(Math.random() * nomes.length)];
-      const cidade = cidades[Math.floor(Math.random() * cidades.length)];
+      const cliente = clientes[Math.floor(Math.random() * clientes.length)];
 
       const id = Date.now();
       const newNotification = {
         id,
-        text: `${nome} de ${cidade} garantiu o acesso vitalício!`
+        text: `${cliente.nome} de ${cliente.cidade} garantiu o acesso vitalício!`
       };
 
       setNotifications(prev => [...prev, newNotification]);
