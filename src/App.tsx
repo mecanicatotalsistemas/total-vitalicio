@@ -88,6 +88,15 @@ function App() {
       <div className="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
 
         <div className="text-center mb-8">
+          <div className="mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-2 leading-tight drop-shadow-2xl">
+              UPGRADE VITALÍCIO - LIBERADO
+            </h2>
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400 mb-6 drop-shadow-xl">
+              Aniversário Mecânica Total
+            </p>
+          </div>
+
           <div className="flex items-center justify-center mb-6">
             <img
               src="https://static-media.hotmart.com/_Qtpx6CJ3KcK3YgAuuOLAfvSFlU=/1024x545/filters:quality(100)/hotmart/checkout_custom/6aac451f-bdfc-4bd2-a364-224a622eabd3/th1xkm2p8.jpeg"
