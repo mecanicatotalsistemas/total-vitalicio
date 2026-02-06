@@ -90,7 +90,7 @@ function App() {
         <div className="text-center mb-8">
           <div className="flex items-center justify-center mb-6">
             <img
-              src="https://static-media.hotmart.com/oZFfobY4V0nK-QhjpYdju37PTwk=/1024x574/filters:quality(100)/hotmart/checkout_custom/4a5031a1-d675-4d31-b0a7-5d5f3e9de656/xd23te91m.jpeg"
+              src="https://static-media.hotmart.com/_Qtpx6CJ3KcK3YgAuuOLAfvSFlU=/1024x545/filters:quality(100)/hotmart/checkout_custom/6aac451f-bdfc-4bd2-a364-224a622eabd3/th1xkm2p8.jpeg"
               alt="Mecânica Total"
               className="w-full max-w-2xl rounded-2xl shadow-2xl border-4 border-white/30"
             />
