@@ -68,7 +68,7 @@ function App() {
     return () => clearInterval(notificationInterval);
   }, []);
 
-  const linkPagamento = "https://pay.hotmart.com/K84654845I?off=1itzus27&checkoutMode=10";
+  const linkPagamento = "https://pay.hotmart.com/K84654845I?off=032huz23&checkoutMode=10";
 
   const courses = [
     "1. Curso sobre Bombas Centrífugas",
