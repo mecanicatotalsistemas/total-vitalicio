@@ -111,7 +111,7 @@ function App() {
 
           <div className="flex items-center justify-center mb-6">
             <img
-              src="https://static-media.hotmart.com/_Qtpx6CJ3KcK3YgAuuOLAfvSFlU=/1024x545/filters:quality(100)/hotmart/checkout_custom/6aac451f-bdfc-4bd2-a364-224a622eabd3/th1xkm2p8.jpeg"
+              src="https://static-media.hotmart.com/JUZ8gVsc8lqZHIISwjzQwMoUfLc=/1024x575/filters:quality(100)/hotmart/checkout_custom/9bed85e6-3dca-48a1-b85d-91cf0a51cceb/gplb4ytvl.jpeg"
               alt="Mecânica Total"
               className="w-full max-w-2xl rounded-2xl shadow-2xl border-4 border-white/30"
             />
