@@ -92,7 +92,8 @@ function App() {
     "19. Curso sobre TPM - Manutenção Produtiva Total",
     "20. Curso sobre SAP - Módulo Manutenção",
     "21. Curso sobre PCM - Planejamento e Controle da Manutenção",
-    "22. Curso sobre Trocadores de Calor"
+    "22. Curso sobre Trocadores de Calor",
+    "23. Curso sobre Termografia Industrial"
   ];
 
   return (
@@ -127,7 +128,7 @@ function App() {
           </div>
 
           <p className="text-xl sm:text-2xl text-white mb-8 max-w-3xl mx-auto font-semibold drop-shadow-lg">
-            Acesso imediato a 22 cursos + TODOS os futuros lançamentos sem pagar nada a mais!
+            Acesso imediato a 23 cursos + TODOS os futuros lançamentos sem pagar nada a mais!
           </p>
 
           <a
@@ -151,7 +152,7 @@ function App() {
             </div>
             <div className="space-y-2">
               <Zap className="w-12 h-12 mx-auto text-orange-400" />
-              <p className="text-3xl font-black">22 Cursos</p>
+              <p className="text-3xl font-black">23 Cursos</p>
               <p className="text-lg font-semibold">Acesso Imediato</p>
             </div>
             <div className="space-y-2">
