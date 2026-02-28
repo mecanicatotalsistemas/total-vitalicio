@@ -37,7 +37,6 @@ const cardVariants = {
 };
 
 function App() {
-  const { hours, minutes, seconds } = useCountdown();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const linkPagamento = "https://pay.hotmart.com/K84654845I?off=032huz23&checkoutMode=10";
 
@@ -174,18 +173,8 @@ function App() {
 
   return (
     <div className="min-h-screen">
-      {/* BARRA SUPERIOR URGÊNCIA */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-[#FF6B00] overflow-hidden">
-        <div className="animate-shimmer absolute inset-0"></div>
-        <div className="relative py-3 text-center">
-          <p className="text-black font-bold text-sm sm:text-base">
-            ⚡ OFERTA ENCERRA EM: <span className="font-black text-lg sm:text-xl">{hours}:{minutes}:{seconds}</span> — Garanta sua vaga antes que acabe!
-          </p>
-        </div>
-      </div>
-
       {/* HERO SECTION */}
-      <section className="pt-20 sm:pt-24 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="pt-12 sm:pt-16 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
@@ -251,16 +240,16 @@ function App() {
               className="bg-[#0F1520] border-t-4 border-t-[#FF6B00] rounded-lg p-6 sm:p-8 shadow-[0_8px_40px_rgba(255,107,0,0.25)] animate-border-pulse lg:sticky lg:top-24"
             >
               <div className="inline-flex items-center gap-2 bg-[#FF3B30] text-white px-4 py-2 rounded-full mb-4 font-bold">
-                🔥 72% OFF — Só hoje
+                🔥 OFERTA ESPECIAL
               </div>
 
               <div className="mb-6">
-                <div className="text-[#8B95A8] line-through text-lg mb-2">De R$ 1.897,00</div>
-                <div className="text-5xl sm:text-6xl font-black text-white mb-2">R$ 497<span className="text-2xl">,00</span></div>
-                <div className="text-[#8B95A8] text-lg mb-3">ou 12x R$ 49,90 no cartão</div>
+                <div className="text-[#8B95A8] line-through text-lg mb-2">De R$ 497,00</div>
+                <div className="text-5xl sm:text-6xl font-black text-white mb-2">12x R$ 17<span className="text-2xl">,10</span></div>
+                <div className="text-[#8B95A8] text-lg mb-3">no cartão de crédito</div>
                 <div className="flex items-center gap-2 text-[#00C853] font-bold">
                   <CheckCircle2 className="w-5 h-5" />
-                  <span>ou R$ 447,00 no PIX (10% off)</span>
+                  <span>ou R$ 156,00 à vista no PIX</span>
                 </div>
               </div>
 
@@ -563,30 +552,23 @@ function App() {
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-4">INVISTA NA SUA CARREIRA HOJE</h2>
-          <p className="text-xl sm:text-2xl text-[#8B95A8] mb-12">Acesso a 23 cursos pelo preço de menos de 1 dia de salário</p>
+          <p className="text-xl sm:text-2xl text-[#8B95A8] mb-12">Acesso a 23 cursos com investimento acessível</p>
 
           <motion.div
             variants={cardVariants}
             className="bg-[#111827] border-4 border-[#FF6B00] rounded-lg p-8 sm:p-12 max-w-lg mx-auto"
           >
-            <div className="inline-flex items-center gap-2 bg-[#FF3B30] text-white px-6 py-3 rounded-full mb-6 font-bold animate-pulse">
-              🔥 OFERTA POR TEMPO LIMITADO
-            </div>
-
-            <div className="bg-[#0F1520] px-6 py-4 rounded-lg mb-6">
-              <div className="text-[#8B95A8] text-sm mb-2">⏰ ENCERRA EM:</div>
-              <div className="text-4xl sm:text-5xl font-black text-[#FF6B00]">
-                {hours}:{minutes}:{seconds}
-              </div>
+            <div className="inline-flex items-center gap-2 bg-[#FF3B30] text-white px-6 py-3 rounded-full mb-6 font-bold">
+              🔥 OFERTA ESPECIAL
             </div>
 
             <div className="mb-6">
-              <div className="text-[#8B95A8] line-through text-xl mb-2">De R$ 1.897,00</div>
-              <div className="text-5xl sm:text-6xl font-black mb-3">R$ 497<span className="text-2xl">,00</span></div>
-              <div className="text-[#8B95A8] text-lg mb-2">ou 12x R$ 49,90 no cartão</div>
+              <div className="text-[#8B95A8] line-through text-xl mb-2">De R$ 497,00</div>
+              <div className="text-5xl sm:text-6xl font-black mb-3">12x R$ 17<span className="text-2xl">,10</span></div>
+              <div className="text-[#8B95A8] text-lg mb-2">no cartão de crédito</div>
               <div className="flex items-center justify-center gap-2 text-[#00C853] font-bold text-lg">
                 <CheckCircle2 className="w-6 h-6" />
-                <span>ou R$ 447,00 no PIX (10% off)</span>
+                <span>ou R$ 156,00 à vista no PIX</span>
               </div>
             </div>
 
@@ -691,16 +673,9 @@ function App() {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl mb-6">
             NÃO DEIXE PARA AMANHÃ<br />O QUE PODE MUDAR SUA CARREIRA HOJE
           </h2>
-          <p className="text-xl sm:text-2xl text-[#8B95A8] mb-8 leading-relaxed">
+          <p className="text-xl sm:text-2xl text-[#8B95A8] mb-12 leading-relaxed">
             Milhares de profissionais já deram esse passo. A diferença entre você e uma promoção pode ser essa decisão agora.
           </p>
-
-          <div className="bg-[#0F1520] border-2 border-[#FF6B00] px-6 py-4 rounded-lg mb-8 inline-block">
-            <div className="text-[#8B95A8] text-sm mb-2">⏰ TEMPO RESTANTE:</div>
-            <div className="text-4xl sm:text-5xl font-black text-[#FF6B00]">
-              {hours}:{minutes}:{seconds}
-            </div>
-          </div>
 
           <motion.a
             href={linkPagamento}
