@@ -41,29 +41,29 @@ function App() {
   const linkPagamento = "https://pay.hotmart.com/K84654845I?off=032huz23&checkoutMode=10";
 
   const courses = [
-    "Rolamentos Industriais",
     "Bombas Centrífugas",
-    "Vedações e Selos Mecânicos",
-    "Alinhamento de Eixos",
-    "Lubrificação Industrial",
-    "Redutores e Engrenagens",
-    "Manutenção Preditiva",
-    "Elementos de Máquinas",
-    "Correias e Polias",
-    "Acoplamentos Industriais",
-    "Análise de Vibração",
-    "Compressores Industriais",
+    "Transportadores de correia",
+    "Mancais e Rolamentos",
+    "Redutores e engrenagens",
+    "Elementos de vedação",
+    "Acoplamentos Mecânico",
+    "Peneiras Vibratórias",
     "Válvulas Industriais",
-    "Manutenção de Motores Elétricos",
-    "Balanceamento Dinâmico",
-    "Caldeiras e Vasos de Pressão",
-    "Pneumática Industrial",
     "Hidráulica Industrial",
-    "FMEA e Análise de Falhas",
-    "Planejamento de Manutenção",
-    "Gestão de Ativos Industriais",
-    "Transportadores de Correia",
-    "MecChat — IA para Mecânica Industrial"
+    "Monitoramento On-line de Ativos",
+    "Inglês Básico",
+    "Lubrificação industrial",
+    "Metrologia",
+    "Técnicas de Confiabilidade",
+    "Pneumática Industrial",
+    "Elementos Filtrantes",
+    "Compressores",
+    "IA para Inspeção de Equipamentos",
+    "TPM - Manutenção Produtiva Total",
+    "SAP - Módulo Manutenção",
+    "PCM - Planejamento e controle da manutenção",
+    "Trocadores de Calor",
+    "Termografia Industrial"
   ];
 
   const painPoints = [
@@ -274,7 +274,7 @@ function App() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.03, y: -3 }}
                 whileTap={{ scale: 0.97 }}
-                className="block w-full bg-[#00C853] hover:bg-[#00D65C] text-black text-center font-black text-lg py-4 rounded-lg mb-3 shadow-lg transition-all ripple"
+                className="block w-full bg-[#00C853] hover:bg-[#00D65C] text-black text-center font-black text-lg py-4 rounded-lg mb-3 transition-all ripple neon-pulse-green"
               >
                 🔒 GARANTIR MINHA VAGA AGORA
               </motion.a>
@@ -371,9 +371,19 @@ function App() {
             variants={cardVariants}
             className="bg-gradient-to-r from-[#FF6B00] to-[#FF8C00] p-8 rounded-lg text-center"
           >
-            <p className="text-xl sm:text-2xl font-bold text-black">
+            <p className="text-xl sm:text-2xl font-bold text-black mb-6">
               Se você marcou pelo menos 1 item acima, o Combo Vitalício foi desenvolvido exatamente para resolver isso.
             </p>
+            <motion.a
+              href={linkPagamento}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-block bg-[#FF3B30] hover:bg-[#FF1B10] text-white font-black text-xl px-10 py-4 rounded-lg transition-all neon-pulse-red"
+            >
+              QUERO RESOLVER ISSO AGORA
+            </motion.a>
           </motion.div>
         </div>
       </motion.section>
@@ -416,9 +426,9 @@ function App() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block bg-[#FF6B00] hover:bg-[#FF8C00] text-white font-black text-xl px-12 py-5 rounded-lg transition-all shadow-lg"
+              className="inline-block bg-[#00C853] hover:bg-[#00D65C] text-black font-black text-xl px-12 py-5 rounded-lg transition-all neon-pulse-green"
             >
-              Quero esses 23 cursos →
+              GARANTIR ACESSO A 23 CURSOS →
             </motion.a>
 
             <div className="mt-8 inline-flex items-center gap-3 bg-gradient-to-r from-[#FFD600] to-[#FF8C00] px-6 py-4 rounded-lg">
@@ -456,6 +466,19 @@ function App() {
               </motion.div>
             ))}
           </motion.div>
+
+          <div className="text-center mt-12">
+            <motion.a
+              href={linkPagamento}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-block bg-[#FF3B30] hover:bg-[#FF1B10] text-white font-black text-xl px-12 py-5 rounded-lg transition-all neon-pulse-red"
+            >
+              QUERO ESSAS VANTAGENS AGORA
+            </motion.a>
+          </div>
         </div>
       </motion.section>
 
@@ -535,9 +558,19 @@ function App() {
           </motion.div>
 
           <div className="text-center">
-            <p className="text-2xl sm:text-3xl font-bold text-[#FF6B00]">
+            <p className="text-2xl sm:text-3xl font-bold text-[#FF6B00] mb-8">
               +15.000 profissionais já transformaram suas carreiras
             </p>
+            <motion.a
+              href={linkPagamento}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-block bg-[#00C853] hover:bg-[#00D65C] text-black font-black text-xl px-12 py-5 rounded-lg transition-all neon-pulse-green"
+            >
+              EU TAMBÉM QUERO ME QUALIFICAR
+            </motion.a>
           </div>
         </div>
       </motion.section>
@@ -578,7 +611,7 @@ function App() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.95 }}
-              className="block w-full bg-[#00C853] hover:bg-[#00D65C] text-black text-center font-black text-xl py-5 rounded-lg mb-6 shadow-lg transition-all animate-pulse-cta"
+              className="block w-full bg-[#00C853] hover:bg-[#00D65C] text-black text-center font-black text-xl py-5 rounded-lg mb-6 transition-all neon-pulse-green"
             >
               QUERO GARANTIR MINHA VAGA
             </motion.a>
@@ -606,9 +639,19 @@ function App() {
         <div className="max-w-3xl mx-auto text-center">
           <Shield className="w-24 h-24 text-[#00C853] mx-auto mb-6" />
           <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-6">GARANTIA INCONDICIONAL DE 7 DIAS</h2>
-          <p className="text-xl sm:text-2xl text-[#8B95A8] leading-relaxed">
+          <p className="text-xl sm:text-2xl text-[#8B95A8] leading-relaxed mb-8">
             Se por qualquer motivo você não ficar satisfeito nos primeiros 7 dias, devolvemos 100% do seu investimento. Sem perguntas, sem burocracia.
           </p>
+          <motion.a
+            href={linkPagamento}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block bg-[#FF3B30] hover:bg-[#FF1B10] text-white font-black text-xl px-12 py-5 rounded-lg transition-all neon-pulse-red"
+          >
+            TESTAR SEM RISCOS AGORA
+          </motion.a>
         </div>
       </motion.section>
 
@@ -683,7 +726,7 @@ function App() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05, y: -5 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-block bg-[#00C853] hover:bg-[#00D65C] text-black font-black text-2xl px-16 py-6 rounded-lg shadow-2xl transition-all animate-pulse-cta"
+            className="inline-block bg-[#00C853] hover:bg-[#00D65C] text-black font-black text-2xl px-16 py-6 rounded-lg shadow-2xl transition-all neon-pulse-green"
           >
             GARANTIR ACESSO VITALÍCIO AGORA
           </motion.a>
@@ -721,7 +764,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
           whileTap={{ scale: 0.95 }}
-          className="block w-full bg-[#00C853] text-black text-center font-black text-lg py-4 rounded-lg shadow-2xl animate-pulse-cta"
+          className="block w-full bg-[#00C853] text-black text-center font-black text-lg py-4 rounded-lg shadow-2xl neon-pulse-green"
         >
           🔒 GARANTIR VAGA AGORA
         </motion.a>

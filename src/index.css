@@ -137,4 +137,46 @@
     width: 300px;
     height: 300px;
   }
+
+  @keyframes neon-pulse-red {
+    0%, 100% {
+      box-shadow:
+        0 0 5px #FF3B30,
+        0 0 10px #FF3B30,
+        0 0 20px #FF3B30,
+        0 0 40px #FF3B30;
+    }
+    50% {
+      box-shadow:
+        0 0 10px #FF3B30,
+        0 0 20px #FF3B30,
+        0 0 40px #FF3B30,
+        0 0 80px #FF3B30;
+    }
+  }
+
+  @keyframes neon-pulse-green {
+    0%, 100% {
+      box-shadow:
+        0 0 5px #00C853,
+        0 0 10px #00C853,
+        0 0 20px #00C853,
+        0 0 40px #00C853;
+    }
+    50% {
+      box-shadow:
+        0 0 10px #00C853,
+        0 0 20px #00C853,
+        0 0 40px #00C853,
+        0 0 80px #00C853;
+    }
+  }
+
+  .neon-pulse-red {
+    animation: neon-pulse-red 1.5s ease-in-out infinite;
+  }
+
+  .neon-pulse-green {
+    animation: neon-pulse-green 1.5s ease-in-out infinite;
+  }
 }
