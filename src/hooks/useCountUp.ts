@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 
-export const useCountUp = (target: number, duration: number = 500) => {
-  const [count, setCount] = useState(target);
+export const useCountUp = (target: number, duration: number = 800) => {
+  const [count, setCount] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
   const [hasStarted, setHasStarted] = useState(false);
 
@@ -10,17 +10,22 @@ export const useCountUp = (target: number, duration: number = 500) => {
       ([entry]) => {
         if (entry.isIntersecting && !hasStarted) {
           setHasStarted(true);
-          let start = 0;
-          const increment = target / (duration / 16);
+          const startTime = Date.now();
           const timer = setInterval(() => {
-            start += increment;
-            if (start >= target) {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const easeOutQuad = 1 - Math.pow(1 - progress, 3);
+            const currentCount = Math.floor(easeOutQuad * target);
+
+            setCount(currentCount);
+
+            if (progress >= 1) {
               setCount(target);
               clearInterval(timer);
-            } else {
-              setCount(Math.floor(start));
             }
           }, 16);
+
+          return () => clearInterval(timer);
         }
       },
       { threshold: 0.1 }
