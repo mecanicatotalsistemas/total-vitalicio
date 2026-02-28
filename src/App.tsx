@@ -176,6 +176,15 @@ function App() {
       <SalesNotifications />
       <ExitPopup checkoutUrl={linkPagamento} />
 
+      {/* BANNER SUPERIOR */}
+      <div className="w-full">
+        <img
+          src="https://static-media.hotmart.com/JUZ8gVsc8lqZHIISwjzQwMoUfLc=/1024x575/filters:quality(100)/hotmart/checkout_custom/9bed85e6-3dca-48a1-b85d-91cf0a51cceb/gplb4ytvl.jpeg"
+          alt="Banner"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+
       {/* HERO SECTION */}
       <section className="pt-12 sm:pt-16 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
