@@ -41,8 +41,7 @@ export default function ExitPopup({ checkoutUrl }: ExitPopupProps) {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="bg-[#0F1520] border-4 border-[#FF3B30] rounded-2xl relative overflow-hidden shadow-2xl"
-            style={{ maxWidth: '55vw', maxHeight: '55vh' }}
+            className="bg-[#0F1520] border-4 border-[#FF3B30] rounded-2xl relative overflow-hidden shadow-2xl w-full max-w-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -52,43 +51,43 @@ export default function ExitPopup({ checkoutUrl }: ExitPopupProps) {
               <X className="w-6 h-6" />
             </button>
 
-            <div className="p-8 sm:p-12 text-center overflow-y-auto max-h-[calc(55vh-8px)]">
+            <div className="p-6 sm:p-8 text-center">
               <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
               >
-                <AlertCircle className="w-20 h-20 text-[#FF3B30] mx-auto mb-6" />
+                <AlertCircle className="w-16 h-16 text-[#FF3B30] mx-auto mb-4" />
               </motion.div>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl mb-3">
                 ESPERE! NÃO PERCA ESSA OPORTUNIDADE
               </h2>
 
-              <p className="text-xl sm:text-2xl text-[#8B95A8] mb-6">
+              <p className="text-lg sm:text-xl text-[#8B95A8] mb-4">
                 Você está a um clique de transformar sua carreira na mecânica industrial!
               </p>
 
-              <div className="bg-gradient-to-r from-[#FF6B00] to-[#FF8C00] p-6 rounded-lg mb-8">
-                <p className="text-xl font-bold text-black mb-4">
+              <div className="bg-gradient-to-r from-[#FF6B00] to-[#FF8C00] p-4 rounded-lg mb-6">
+                <p className="text-lg font-bold text-black mb-3">
                   🎁 ÚLTIMA CHANCE: OFERTA ESPECIAL
                 </p>
-                <div className="text-4xl sm:text-5xl font-black text-white mb-2">
-                  12x R$ 17<span className="text-2xl">,10</span>
+                <div className="text-3xl sm:text-4xl font-black text-white mb-2">
+                  12x R$ 17<span className="text-xl">,10</span>
                 </div>
-                <div className="text-lg text-black font-bold">
+                <div className="text-base text-black font-bold">
                   ou R$ 156,00 à vista no PIX
                 </div>
               </div>
 
-              <div className="space-y-3 mb-8 text-left">
+              <div className="space-y-2 mb-6 text-left">
                 {[
                   "✅ 23 cursos completos + futuros lançamentos",
                   "✅ Acesso vitalício sem mensalidades",
                   "✅ Certificado reconhecido nacionalmente",
                   "✅ 7 dias de garantia total"
                 ].map((item, i) => (
-                  <div key={i} className="text-[#F0F4FA] text-lg flex items-center gap-3">
+                  <div key={i} className="text-[#F0F4FA] text-base flex items-center gap-2">
                     <span>{item}</span>
                   </div>
                 ))}
@@ -100,7 +99,7 @@ export default function ExitPopup({ checkoutUrl }: ExitPopupProps) {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="block w-full bg-[#00C853] hover:bg-[#00D65C] text-black text-center font-black text-xl py-5 rounded-lg mb-4 transition-all neon-pulse-green"
+                className="block w-full bg-[#00C853] hover:bg-[#00D65C] text-black text-center font-black text-lg py-4 rounded-lg mb-3 transition-all neon-pulse-green"
               >
                 🔒 SIM! QUERO GARANTIR MINHA VAGA
               </motion.a>
