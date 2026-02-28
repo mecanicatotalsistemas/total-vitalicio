@@ -158,18 +158,22 @@
 
   @keyframes neon-pulse-green {
     0%, 100% {
+      transform: scale(1);
       box-shadow:
-        0 0 5px #00C853,
         0 0 10px #00C853,
         0 0 20px #00C853,
-        0 0 40px #00C853;
+        0 0 30px #00C853,
+        0 0 50px #00C853,
+        0 0 70px #00C853;
     }
     50% {
+      transform: scale(1.05);
       box-shadow:
-        0 0 10px #00C853,
         0 0 20px #00C853,
         0 0 40px #00C853,
-        0 0 80px #00C853;
+        0 0 60px #00C853,
+        0 0 100px #00C853,
+        0 0 140px #00C853;
     }
   }
 
@@ -178,7 +182,7 @@
   }
 
   .neon-pulse-green {
-    animation: neon-pulse-green 1.5s ease-in-out infinite;
+    animation: neon-pulse-green 1s ease-in-out infinite;
   }
 
   @keyframes shrink-width {
