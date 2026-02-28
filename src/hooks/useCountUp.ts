@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 
-export const useCountUp = (target: number, duration: number = 2000) => {
-  const [count, setCount] = useState(0);
+export const useCountUp = (target: number, duration: number = 500) => {
+  const [count, setCount] = useState(target);
   const ref = useRef<HTMLDivElement>(null);
   const [hasStarted, setHasStarted] = useState(false);
 
@@ -23,7 +23,7 @@ export const useCountUp = (target: number, duration: number = 2000) => {
           }, 16);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
 
     if (ref.current) {

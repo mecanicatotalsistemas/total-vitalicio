@@ -169,9 +169,9 @@ function App() {
     }
   ];
 
-  const alunosCount = useCountUp(15000, 2000);
-  const cursosCount = useCountUp(23, 1500);
-  const avaliacaoCount = useCountUp(49, 1500);
+  const alunosCount = useCountUp(15000, 500);
+  const cursosCount = useCountUp(23, 500);
+  const avaliacaoCount = useCountUp(49, 500);
 
   return (
     <div className="min-h-screen">
