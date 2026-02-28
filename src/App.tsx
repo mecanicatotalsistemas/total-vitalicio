@@ -312,6 +312,85 @@ function App() {
         </div>
       </section>
 
+      {/* VÍDEOS DEMONSTRATIVOS */}
+      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[#0F1520]">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={sectionVariants}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl mb-4">
+              VEJA COMO FUNCIONA NA PRÁTICA
+            </h2>
+            <p className="text-lg sm:text-xl text-[#8B95A8] max-w-3xl mx-auto">
+              Assista aos vídeos e descubra por que nossos alunos estão conquistando promoções e melhores salários
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={containerVariants}
+            className="grid md:grid-cols-2 gap-6 sm:gap-8"
+          >
+            <motion.div variants={cardVariants} className="bg-[#1A1F2E] rounded-lg overflow-hidden border border-[rgba(255,107,0,0.15)] hover:border-[#FF6B00] transition-all">
+              <div className="aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/DnbnOuFDn2w?si=YfPmhwTwQ_HZCTlm"
+                  title="Vídeo demonstrativo 1"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Tecnologia 3D Interativa</h3>
+                <p className="text-[#8B95A8]">Aprenda com visualizações em 3D que tornam conceitos complexos simples de entender</p>
+              </div>
+            </motion.div>
+
+            <motion.div variants={cardVariants} className="bg-[#1A1F2E] rounded-lg overflow-hidden border border-[rgba(255,107,0,0.15)] hover:border-[#FF6B00] transition-all">
+              <div className="aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/gEgA-dFqZ9A?si=YPM_ZUWcMSJ3TaEU"
+                  title="Vídeo demonstrativo 2"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Conteúdo Prático e Aplicável</h3>
+                <p className="text-[#8B95A8]">Aulas direto ao ponto com situações reais da indústria</p>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={cardVariants}
+            className="text-center mt-12"
+          >
+            <motion.a
+              href={linkPagamento}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-block bg-[#00C853] hover:bg-[#00D65C] text-black font-black text-xl px-10 py-5 rounded-lg transition-all neon-pulse-green"
+            >
+              🔒 QUERO ACESSO COMPLETO AGORA
+            </motion.a>
+          </motion.div>
+        </div>
+      </section>
+
       {/* BARRA DE PROVA SOCIAL */}
       <section className="bg-[#0F1520] py-8 sm:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
