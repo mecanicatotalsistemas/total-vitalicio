@@ -20,6 +20,8 @@ import {
 } from 'lucide-react';
 import { useCountdown } from './hooks/useCountdown';
 import { useCountUp } from './hooks/useCountUp';
+import SalesNotifications from './components/SalesNotifications';
+import ExitPopup from './components/ExitPopup';
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -173,6 +175,9 @@ function App() {
 
   return (
     <div className="min-h-screen">
+      <SalesNotifications />
+      <ExitPopup checkoutUrl={linkPagamento} />
+
       {/* HERO SECTION */}
       <section className="pt-12 sm:pt-16 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
