@@ -73,10 +73,10 @@ export default function ExitPopup({ checkoutUrl }: ExitPopupProps) {
                   🎁 ÚLTIMA CHANCE: OFERTA ESPECIAL
                 </p>
                 <div className="text-3xl sm:text-4xl font-black text-white mb-2">
-                  12x R$ 17<span className="text-xl">,10</span>
+                  12x R$ 24<span className="text-xl">,75</span>
                 </div>
                 <div className="text-base text-black font-bold">
-                  ou R$ 156,00 à vista no PIX
+                  ou R$ 297,00 à vista no PIX
                 </div>
               </div>
 
