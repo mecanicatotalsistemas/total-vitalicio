@@ -177,11 +177,11 @@ function App() {
       <ExitPopup checkoutUrl={linkPagamento} />
 
       {/* BANNER SUPERIOR */}
-      <div className="w-full">
+      <div className="w-full flex justify-center py-6">
         <img
           src="https://static-media.hotmart.com/JUZ8gVsc8lqZHIISwjzQwMoUfLc=/1024x575/filters:quality(100)/hotmart/checkout_custom/9bed85e6-3dca-48a1-b85d-91cf0a51cceb/gplb4ytvl.jpeg"
           alt="Banner"
-          className="w-full h-auto object-cover"
+          className="w-[80%] h-auto object-cover rounded-lg"
         />
       </div>
 
