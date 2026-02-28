@@ -460,7 +460,6 @@ export default function SalesNotifications() {
                   <span className="text-white font-semibold">{currentSale.name}</span> de{' '}
                   <span className="text-white">{currentSale.location}</span> se tornou nosso aluno
                 </div>
-                <div className="text-xs text-[#8B95A8] mt-1">agora mesmo</div>
               </div>
             </div>
           </div>
