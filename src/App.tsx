@@ -169,7 +169,6 @@ function App() {
     }
   ];
 
-  const cursosCount = useCountUp(23, 1000);
   const avaliacaoCount = useCountUp(49, 1000);
 
   return (
@@ -212,7 +211,7 @@ function App() {
                   <div className="text-xs sm:text-sm text-[#8B95A8] mt-1">alunos formados</div>
                 </div>
                 <div className="text-center">
-                  <div ref={cursosCount.ref} className="text-3xl sm:text-4xl font-black text-[#FF6B00]">{cursosCount.count}</div>
+                  <div className="text-3xl sm:text-4xl font-black text-[#FF6B00]">23</div>
                   <div className="text-xs sm:text-sm text-[#8B95A8] mt-1">cursos inclusos</div>
                 </div>
                 <div className="text-center">
@@ -432,8 +431,8 @@ function App() {
               <div className="text-sm sm:text-base text-[#8B95A8]">Alunos ativos</div>
             </div>
             <div className="text-center">
-              <div ref={cursosCount.ref} className="text-3xl sm:text-4xl font-black text-[#FF6B00] mb-2">
-                {cursosCount.count}
+              <div className="text-3xl sm:text-4xl font-black text-[#FF6B00] mb-2">
+                23
               </div>
               <div className="text-sm sm:text-base text-[#8B95A8]">Cursos disponíveis</div>
             </div>
