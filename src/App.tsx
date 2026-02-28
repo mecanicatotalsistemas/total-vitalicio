@@ -169,7 +169,6 @@ function App() {
     }
   ];
 
-  const alunosCount = useCountUp(15000, 1200);
   const cursosCount = useCountUp(23, 1000);
   const avaliacaoCount = useCountUp(49, 1000);
 
@@ -209,7 +208,7 @@ function App() {
 
               <motion.div variants={cardVariants} className="grid grid-cols-3 gap-4 py-6">
                 <div className="text-center">
-                  <div ref={alunosCount.ref} className="text-3xl sm:text-4xl font-black text-[#FF6B00]">+{alunosCount.count.toLocaleString()}</div>
+                  <div className="text-3xl sm:text-4xl font-black text-[#FF6B00]">+15.000</div>
                   <div className="text-xs sm:text-sm text-[#8B95A8] mt-1">alunos formados</div>
                 </div>
                 <div className="text-center">
@@ -427,8 +426,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="text-center">
-              <div ref={alunosCount.ref} className="text-3xl sm:text-4xl font-black text-[#FF6B00] mb-2">
-                {alunosCount.count.toLocaleString()}+
+              <div className="text-3xl sm:text-4xl font-black text-[#FF6B00] mb-2">
+                15.000+
               </div>
               <div className="text-sm sm:text-base text-[#8B95A8]">Alunos ativos</div>
             </div>
