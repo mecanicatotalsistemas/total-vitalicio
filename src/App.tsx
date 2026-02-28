@@ -153,7 +153,7 @@ function App() {
     },
     {
       q: "Qual a forma de pagamento?",
-      a: "Aceitamos PIX (com 10% de desconto), cartão de crédito (em até 12x sem juros) e boleto bancário."
+      a: "Aceitamos PIX, cartão de crédito (em até 12x sem juros) e boleto bancário."
     },
     {
       q: "E se eu não gostar?",
@@ -335,17 +335,18 @@ function App() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={containerVariants}
-            className="grid md:grid-cols-2 gap-6 sm:gap-8"
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
           >
             <motion.div variants={cardVariants} className="bg-[#1A1F2E] rounded-lg overflow-hidden border border-[rgba(255,107,0,0.15)] hover:border-[#FF6B00] transition-all">
               <div className="aspect-video">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/DnbnOuFDn2w?si=YfPmhwTwQ_HZCTlm"
-                  title="Vídeo demonstrativo 1"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                <video
+                  className="w-full h-full object-cover"
+                  controls
+                  preload="metadata"
+                >
+                  <source src="https://s4-lb.1app.com.br/path/https://s3.1app.com.br/master/project_3969/9FGcRpQIpdlqcWcdAbribLWyXhKcDq4v.mp4" type="video/mp4" />
+                  Seu navegador não suporta vídeos.
+                </video>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-2">Tecnologia 3D Interativa</h3>
@@ -355,17 +356,35 @@ function App() {
 
             <motion.div variants={cardVariants} className="bg-[#1A1F2E] rounded-lg overflow-hidden border border-[rgba(255,107,0,0.15)] hover:border-[#FF6B00] transition-all">
               <div className="aspect-video">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/gEgA-dFqZ9A?si=YPM_ZUWcMSJ3TaEU"
-                  title="Vídeo demonstrativo 2"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                <video
+                  className="w-full h-full object-cover"
+                  controls
+                  preload="metadata"
+                >
+                  <source src="https://s4-lb.1app.com.br/path/https://s3.1app.com.br/master/project_3969/xc9rEgDMf2pwC8VXQEVU6ucQ1SvsL66c.mp4" type="video/mp4" />
+                  Seu navegador não suporta vídeos.
+                </video>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-2">Conteúdo Prático e Aplicável</h3>
                 <p className="text-[#8B95A8]">Aulas direto ao ponto com situações reais da indústria</p>
+              </div>
+            </motion.div>
+
+            <motion.div variants={cardVariants} className="bg-[#1A1F2E] rounded-lg overflow-hidden border border-[rgba(255,107,0,0.15)] hover:border-[#FF6B00] transition-all">
+              <div className="aspect-video">
+                <video
+                  className="w-full h-full object-cover"
+                  controls
+                  preload="metadata"
+                >
+                  <source src="https://s4-lb.1app.com.br/path/https://s3.1app.com.br/master/project_3969/mctbDZwsxOPXZWlr65kFVVT3TWwKKiWN.mp4" type="video/mp4" />
+                  Seu navegador não suporta vídeos.
+                </video>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Resultados Comprovados</h3>
+                <p className="text-[#8B95A8]">Veja como nossos alunos aplicam o conhecimento no dia a dia</p>
               </div>
             </motion.div>
           </motion.div>
