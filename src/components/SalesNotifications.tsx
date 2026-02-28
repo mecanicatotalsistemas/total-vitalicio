@@ -456,10 +456,9 @@ export default function SalesNotifications() {
                 <CheckCircle2 className="w-8 h-8 text-[#00C853]" />
               </div>
               <div className="flex-1">
-                <div className="font-bold text-white mb-1">Nova matrícula confirmada!</div>
                 <div className="text-sm text-[#8B95A8]">
                   <span className="text-white font-semibold">{currentSale.name}</span> de{' '}
-                  <span className="text-white">{currentSale.location}</span>
+                  <span className="text-white">{currentSale.location}</span> se tornou nosso aluno
                 </div>
                 <div className="text-xs text-[#8B95A8] mt-1">agora mesmo</div>
               </div>
