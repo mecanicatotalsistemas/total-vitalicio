@@ -247,12 +247,12 @@ function App() {
               </div>
 
               <div className="mb-6">
-                <div className="text-[#8B95A8] line-through text-lg mb-2">De R$ 497,00</div>
-                <div className="text-5xl sm:text-6xl font-black text-white mb-2">12x R$ 17<span className="text-2xl">,10</span></div>
+                <div className="text-[#8B95A8] line-through text-lg mb-2">De R$ 997,00</div>
+                <div className="text-5xl sm:text-6xl font-black text-white mb-2">12x R$ 18<span className="text-2xl">,08</span></div>
                 <div className="text-[#8B95A8] text-lg mb-3">no cartão de crédito</div>
                 <div className="flex items-center gap-2 text-[#00C853] font-bold">
                   <CheckCircle2 className="w-5 h-5" />
-                  <span>ou R$ 156,00 à vista no PIX</span>
+                  <span>ou R$ 217,00 à vista no PIX</span>
                 </div>
               </div>
 
@@ -709,12 +709,12 @@ function App() {
             </div>
 
             <div className="mb-6">
-              <div className="text-[#8B95A8] line-through text-xl mb-2">De R$ 497,00</div>
-              <div className="text-5xl sm:text-6xl font-black mb-3">12x R$ 17<span className="text-2xl">,10</span></div>
+              <div className="text-[#8B95A8] line-through text-xl mb-2">De R$ 997,00</div>
+              <div className="text-5xl sm:text-6xl font-black mb-3">12x R$ 18<span className="text-2xl">,08</span></div>
               <div className="text-[#8B95A8] text-lg mb-2">no cartão de crédito</div>
               <div className="flex items-center justify-center gap-2 text-[#00C853] font-bold text-lg">
                 <CheckCircle2 className="w-6 h-6" />
-                <span>ou R$ 156,00 à vista no PIX</span>
+                <span>ou R$ 217,00 à vista no PIX</span>
               </div>
             </div>
 
