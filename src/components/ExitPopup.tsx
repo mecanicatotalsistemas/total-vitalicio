@@ -41,7 +41,8 @@ export default function ExitPopup({ checkoutUrl }: ExitPopupProps) {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="bg-[#0F1520] border-4 border-[#FF3B30] rounded-2xl max-w-2xl w-full relative overflow-hidden shadow-2xl"
+            className="bg-[#0F1520] border-4 border-[#FF3B30] rounded-2xl relative overflow-hidden shadow-2xl"
+            style={{ maxWidth: '55vw', maxHeight: '55vh' }}
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -51,7 +52,7 @@ export default function ExitPopup({ checkoutUrl }: ExitPopupProps) {
               <X className="w-6 h-6" />
             </button>
 
-            <div className="p-8 sm:p-12 text-center">
+            <div className="p-8 sm:p-12 text-center overflow-y-auto max-h-[calc(55vh-8px)]">
               <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
@@ -76,7 +77,7 @@ export default function ExitPopup({ checkoutUrl }: ExitPopupProps) {
                   12x R$ 17<span className="text-2xl">,10</span>
                 </div>
                 <div className="text-lg text-black font-bold">
-                  ou R$ 156,00 à vista no PIX (10% desconto)
+                  ou R$ 156,00 à vista no PIX
                 </div>
               </div>
 

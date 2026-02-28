@@ -335,13 +335,17 @@ function App() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={containerVariants}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+            className="flex flex-col gap-6 sm:gap-8 max-w-[80%] mx-auto"
           >
             <motion.div variants={cardVariants} className="bg-[#1A1F2E] rounded-lg overflow-hidden border border-[rgba(255,107,0,0.15)] hover:border-[#FF6B00] transition-all">
               <div className="aspect-video">
                 <video
                   className="w-full h-full object-cover"
                   controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                   preload="metadata"
                 >
                   <source src="https://s4-lb.1app.com.br/path/https://s3.1app.com.br/master/project_3969/9FGcRpQIpdlqcWcdAbribLWyXhKcDq4v.mp4" type="video/mp4" />
@@ -359,6 +363,10 @@ function App() {
                 <video
                   className="w-full h-full object-cover"
                   controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                   preload="metadata"
                 >
                   <source src="https://s4-lb.1app.com.br/path/https://s3.1app.com.br/master/project_3969/xc9rEgDMf2pwC8VXQEVU6ucQ1SvsL66c.mp4" type="video/mp4" />
@@ -376,6 +384,10 @@ function App() {
                 <video
                   className="w-full h-full object-cover"
                   controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                   preload="metadata"
                 >
                   <source src="https://s4-lb.1app.com.br/path/https://s3.1app.com.br/master/project_3969/mctbDZwsxOPXZWlr65kFVVT3TWwKKiWN.mp4" type="video/mp4" />
