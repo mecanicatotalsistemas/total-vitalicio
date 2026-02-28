@@ -862,12 +862,26 @@ function App() {
             <a href="#" className="hover:text-[#FF6B00] transition-colors">Termos de Uso</a>
           </div>
 
-          <p className="text-xs text-[#8B95A8] max-w-3xl mx-auto leading-relaxed">
+          <div className="mb-6 space-y-2 text-sm text-[#8B95A8]">
+            <p className="font-bold text-white">Mecânica Total®</p>
+            <p>CNPJ: 29.705.491/0001-58</p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+              <a href="mailto:suporte@mecanicatotalbrasil.com.br" className="hover:text-[#FF6B00] transition-colors">
+                suporte@mecanicatotalbrasil.com.br
+              </a>
+              <span className="hidden sm:inline">•</span>
+              <a href="tel:+5527993222442" className="hover:text-[#FF6B00] transition-colors">
+                +55 27 99322-2442
+              </a>
+            </div>
+          </div>
+
+          <p className="text-xs text-[#8B95A8] max-w-3xl mx-auto leading-relaxed mb-4">
             Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.
           </p>
 
-          <p className="text-xs text-[#8B95A8] mt-4">
-            © 2024 Mecânica Total. Todos os direitos reservados.
+          <p className="text-xs text-[#8B95A8]">
+            © 2026 Mecânica Total. Todos os direitos reservados.
           </p>
         </div>
       </footer>
