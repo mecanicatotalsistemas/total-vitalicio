@@ -101,7 +101,7 @@ export default function ExitPopup({ checkoutUrl }: ExitPopupProps) {
                 whileTap={{ scale: 0.95 }}
                 className="block w-full bg-[#00C853] hover:bg-[#00D65C] text-black text-center font-black text-lg py-4 rounded-lg mb-3 transition-all neon-pulse-green"
               >
-                🔒 SIM! QUERO GARANTIR MINHA VAGA
+                🔒 SIM! QUERO ACESSO VITALÍCIO
               </motion.a>
 
               <button

@@ -177,7 +177,10 @@ function App() {
       <ExitPopup checkoutUrl={linkPagamento} />
 
       {/* BANNER SUPERIOR */}
-      <div className="w-full flex justify-center py-6">
+      <div className="w-full flex flex-col items-center py-6">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 text-center">
+          ACESSO VITALÍCIO
+        </h2>
         <img
           src="https://static-media.hotmart.com/JUZ8gVsc8lqZHIISwjzQwMoUfLc=/1024x575/filters:quality(100)/hotmart/checkout_custom/9bed85e6-3dca-48a1-b85d-91cf0a51cceb/gplb4ytvl.jpeg"
           alt="Banner"
@@ -288,7 +291,7 @@ function App() {
                 whileTap={{ scale: 0.97 }}
                 className="block w-full bg-[#00C853] hover:bg-[#00D65C] text-black text-center font-black text-lg py-4 rounded-lg mb-3 transition-all ripple neon-pulse-green"
               >
-                🔒 GARANTIR MINHA VAGA AGORA
+                🔒 GARANTIR ACESSO VITALÍCIO
               </motion.a>
 
               <p className="text-center text-sm text-[#8B95A8] mb-4">Acesso imediato após o pagamento</p>
@@ -735,7 +738,7 @@ function App() {
               whileTap={{ scale: 0.95 }}
               className="block w-full bg-[#00C853] hover:bg-[#00D65C] text-black text-center font-black text-xl py-5 rounded-lg mb-6 transition-all neon-pulse-green"
             >
-              QUERO GARANTIR MINHA VAGA
+              QUERO ACESSO VITALÍCIO
             </motion.a>
 
             <div className="flex items-center justify-center gap-4 text-[#8B95A8] text-sm">
